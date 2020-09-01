@@ -57,9 +57,11 @@ lxc exec "nameContainer" -- /bin/bash
 ```
 ```bash 
 curl -o- https://raw.githubusercontent.com/jotap1999/k8s-docker-Install-Script-Ubuntu/master/install.sh  | bash
-
+```
+```bash 
 echo 'L /dev/kmsg - - - - /dev/console' > /etc/tmpfiles.d/kmsg.conf
-
+```
+```bash 
 reboot
 ```
 
