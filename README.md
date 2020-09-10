@@ -56,7 +56,7 @@ lxc exec kubernode2 reboot
 lxc exec "nameContainer" -- /bin/bash 
 ```
 ```bash 
-curl -o- https://raw.githubusercontent.com/jotap1999/k8s-docker-Install-Script-Ubuntu/master/install.sh  | bash
+curl -o- https://raw.githubusercontent.com/jotapff/k8s-docker-Install-Script-Ubuntu/master/install.sh  | bash
 ```
 ```bash 
 echo 'L /dev/kmsg - - - - /dev/console' > /etc/tmpfiles.d/kmsg.conf
@@ -71,7 +71,7 @@ reboot
 lxc exec kubermaster -- /bin/bash 
 ```
 
-**Note:** If you want to configure the kuber with auth LDAP/SAMBA, head over to the [K8s Samba Authentication](https://github.com/jotap1999/k8s-samba-authentication) and ignore the following indications
+**Note:** If you want to configure the kuber with auth LDAP/SAMBA, head over to the [K8s Samba Authentication](https://github.com/jotapff/k8s-samba-authentication) and ignore the following indications
 
 ```bash
 kubeadm init --pod-network-cidr=10.244.0.0/16
